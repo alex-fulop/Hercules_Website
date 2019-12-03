@@ -1,7 +1,7 @@
 /* 
     Colors used:
     #F20530
-    #121D26
+    #F2636F
     #5E778C
     #A0D3F2
     #A0DBF2
@@ -16,7 +16,9 @@
 }
 
 body{
+    background: #161111;
     font-family: 'Roboto',sans-serif;
+    line-height: 1.4;
 }
 
 a{
@@ -29,7 +31,36 @@ p{
 
 /* Utility classes */
 .text-primary{
-    color:#F20530 ;
+    color:#05F2AF ;
+}
+
+.l-heading{
+font-size: 3rem;
+line-height: 1.1;
+margin-bottom: 0.75rem;
+}
+
+.lead{
+font-size: 1.3rem;
+margin-bottom: 2rem;
+}
+
+.btn{
+display: inline-block;
+background: #05F2AF;
+padding: 0.5rem 2rem;
+color: #161111;
+border-radius: 5px;
+border: none;
+}
+
+.btn:hover{
+    background: #04D99D;
+}
+
+.btn-dark{
+    background: #26010B;
+    color: #fff;
 }
 
 /* Navbar */
@@ -37,8 +68,8 @@ p{
     display: flex;
     position: sticky;
     top: 0;
-    background: #F2F2F2;
-    color:#0D0D0D;
+    background: rgb(14, 0, 4);
+    color: #ffffff;
     justify-content: space-between;
     z-index: 1;
     padding: 1rem;
@@ -51,14 +82,36 @@ p{
 }
 
 #navbar ul li a{
-    color: #0D0D0D;
+    color: #ffffff;
     padding: 0.75rem;
     margin: 0 0.25rem;
 }
 
 #navbar ul li a:hover{
-    background: #F2636F;
+    background: #05F2AF;
     border-radius: 5px;
     cursor: pointer;
 
+}
+
+/* Showcase */
+
+#showcase{
+    background: #333 url(https://images.pexels.com/photos/417273/pexels-photo-417273.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#showcase .showcase-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 2rem;
+    /* Overlay */
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
 }
