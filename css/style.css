@@ -84,6 +84,7 @@ border: none;
 .btn-dark{
     background: #161111;
     color: #F2F2F2;
+    border: none;
 }
 
 .list{
@@ -104,6 +105,10 @@ border: none;
 .bg-dark{
     background: rgb(14, 0, 4);;
     color:#F2F2F2;
+}
+.bg-primary{
+    background: #5CF2C8;
+    color: #fff;
 }
 
 /* Navbar */
@@ -190,7 +195,7 @@ border: none;
 #who .who-img{
     background: url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center/cover;
 }
-
+ /* Section: Clients */
 .clients .items{
     display: flex;
 }
@@ -199,4 +204,26 @@ border: none;
     display: block;
     margin: auto;
     width: 60%;
+}
+
+/* Section: Contact */
+#contact{
+    display: flex;
+}
+
+#contact .map, #contact .contact-form{
+flex: 1;
+}
+
+#contact .contact-form .form-group{
+    margin: 0.75rem;
+}
+
+#contact .contact-form label{
+    display: block;
+}
+
+#contact .contact-form input, #contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
 }
