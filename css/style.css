@@ -161,6 +161,8 @@ border: none;
     /* Overlay */
     position: absolute;
     left: 0;
+    top: 65px;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -226,4 +228,10 @@ flex: 1;
 #contact .contact-form input, #contact .contact-form textarea{
     width: 100%;
     padding: 0.5rem;
+}
+#contact .contact-form textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+}
+#contact .map iframe{
+    display: block;
 }
